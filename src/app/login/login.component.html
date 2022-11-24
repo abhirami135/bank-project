@@ -9,10 +9,22 @@
     <label for="acno">Account Number</label>
     <input formControlName="acno" id="acno" type="text" placeholder="Account No" class="form-control">
   </div>
+  
+  <div *ngIf="this.loginForm.get('acno')?.errors&&this.loginForm.get('acno')?.touched" class="text-danger">
+    Invalid account Number
+  </div>
+
   <div class="mb-3">
     <label for="pswd">Password</label>
     <input formControlName="pswd" id="pswd" type="password" placeholder="password" class="form-control">
   </div>
+
+  <div *ngIf="this.loginForm.get('pswd')?.errors&&this.loginForm.get('pswd')?.touched" class="text-danger">
+    Invalid password
+  </div>
+
+
+
   <div>
     <button class="btn btn-primary">Login</button>&nbsp;
     <span>New User? Click here to <a href="">Register</a></span>
