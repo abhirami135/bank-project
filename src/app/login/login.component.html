@@ -1,0 +1,23 @@
+<div class="row">
+<div class="col-6 text-center">
+     <img class="mt-5"src="https://th.bing.com/th/id/OIP.MObAjj46iU-oBMBR6EoneAHaEZ?pid=ImgDet&rs=1"alt="no image"> 
+
+</div>
+<div class="col-6">
+    <form (ngSubmit)="login()" [formGroup]="loginForm" style="margin-top:150px;" class="p-3 border">
+      <div class="mb-3">
+    <label for="acno">Account Number</label>
+    <input formControlName="acno" id="acno" type="text" placeholder="Account No" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="pswd">Password</label>
+    <input formControlName="pswd" id="pswd" type="password" placeholder="password" class="form-control">
+  </div>
+  <div>
+    <button class="btn btn-primary">Login</button>&nbsp;
+    <span>New User? Click here to <a href="">Register</a></span>
+  </div>
+    </form>
+  
+  </div>
+  </div>
